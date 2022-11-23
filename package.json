@@ -4,7 +4,7 @@
     "description": "Tienda virtual de libros y guias de Ingles para todo publico.",
     "main": "server.js",
     "engines":{
-        "node": "node.19.x"
+        "node": "node.16.18.0"
     },
     "scripts": {
         "start": "node back/server.js",
