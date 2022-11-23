@@ -1,35 +1,39 @@
 {
-    "name": "bookstroregroup",
-    "version": "1.0.0",
-    "description": "Tienda virtual de libros y guias de Ingles para todo publico.",
-    "main": "server.js",
-    "engines":{
-        "node": "node.16.18.0"
-    },
-    "scripts": {
-        "start": "node back/server.js",
-        "dev": "set NODE_ENV=DEVELOPMENT& nodemon back/server",
-        "prod": "set NODE_ENV=PRODUCTION& nodemon back/server",
-        "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && NODE_OPTIONS=--openssl-legacy-provider && npm install --force --prefix front && npm run build --prefix front"
-        
-    },
-    "author": "Store English Books",
-    "license": "ISC",
-    "dependencies": {
-        "bcryptjs": "^2.4.3",
-        "body-parser": "^1.20.1",
-        "cloudinary": "^1.32.0",
-        "cookie-parser": "^1.4.6",
-        "dotenv": "^16.0.3",
-        "express": "^4.18.2",
-        "express-fileupload": "^1.4.0",
-        "jsonwebtoken": "^8.5.1",    
-        "mongoose": "^6.6.5",
-        "nodemailer": "^6.8.0",
-                       
-        "validator": "^13.7.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.20"
-    }
+  "name": "bookstoregroup",
+  "version": "1.0.0",
+  "description": "Tienda virtual de libros y guias de Ingles para todo publico.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon back/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && NODE_OPTIONS=--openssl-legacy-provider && npm install --force --prefix front && npm run build --prefix front"
+  },
+  "author": "Store English Books",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "nodemailer": "^6.8.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BookStoreGroup/BookStoreGroup.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/BookStoreGroup/BookStoreGroup/issues"
+  },
+  "homepage": "https://github.com/BookStoreGroup/BookStoreGroup#readme"
 }
